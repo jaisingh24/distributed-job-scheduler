@@ -44,21 +44,21 @@ A scalable **Distributed Job Scheduler** built using **Java, Spring Boot, Redis,
 
 ## 🏗️ System Architecture
 
-Client
+*Client
+*↓
+*REST API (Spring Boot)
 ↓
-REST API (Spring Boot)
-↓
-MySQL (Job Metadata)
-↓
-Scheduler
-↓
-Redis Queue
-↓
-Worker
-↓
-Execution + Retry
-↓
-Dead Letter Queue
+*MySQL (Job Metadata)
+*↓
+*Scheduler
+*↓
+*Redis Queue
+*↓
+*Worker
+*↓
+*Execution + Retry
+*↓
+*Dead Letter Queue
 
 ---
 
