@@ -97,16 +97,31 @@ A scalable **Distributed Job Scheduler** built using **Java, Spring Boot, Redis,
 
 ## 📂 Project Structure
 
+```
 scheduler/
+│
 ├── controller/
+│   └── JobController.java
+│
 ├── service/
+│   └── JobService.java
+│
 ├── worker/
+│   └── JobWorker.java
+│
 ├── repository/
+│   ├── JobRepository.java
+│   └── JobExecutionRepository.java
+│
 ├── entity/
+│   ├── Job.java
+│   └── JobExecution.java
+│
 ├── config/
+│   └── RedisConfig.java
+│
 └── SchedulerApplication.java
-
----
+```
 
 ## 🔑 Key Concepts Used
 
