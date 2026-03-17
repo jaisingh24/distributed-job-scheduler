@@ -44,23 +44,47 @@ A scalable **Distributed Job Scheduler** built using **Java, Spring Boot, Redis,
 
 ## 🏗️ System Architecture
 
-*Client
-*↓
-*REST API (Spring Boot)
-↓
-*MySQL (Job Metadata)
-*↓
-*Scheduler
-*↓
-*Redis Queue
-*↓
-*Worker
-*↓
-*Execution + Retry
-*↓
-*Dead Letter Queue
-
----
+```
+             ┌──────────────┐
+             │    Client    │
+             └──────┬───────┘
+                    │
+                    ▼
+        ┌──────────────────────┐
+        │  REST API (Spring)   │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │     MySQL (DB)       │
+        │   Job Metadata       │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │      Scheduler       │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │     Redis Queue      │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │        Worker        │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │  Execution + Retry   │
+        └─────────┬────────────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │ Dead Letter Queue    │
+        └──────────────────────┘
+```
 
 ## 🛠️ Tech Stack
 
