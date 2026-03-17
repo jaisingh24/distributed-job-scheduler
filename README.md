@@ -191,7 +191,7 @@ GET /jobs/{id}
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/job-scheduler.git
+git clone https://github.com/jaisingh24/distributed-job-scheduler.git
 cd job-scheduler
 
 ---
