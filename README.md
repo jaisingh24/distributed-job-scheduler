@@ -260,14 +260,7 @@ POST http://localhost:8080/jobs
 
 ---
 
-## 📈 Resume Highlights
 
-* Built distributed scheduler handling **10k+ jobs**
-* Implemented retry mechanism with Dead Letter Queue
-* Designed scalable worker architecture
-* Improved throughput by **3–5×**
-
----
 
 ## 👨‍💻 Author
 
